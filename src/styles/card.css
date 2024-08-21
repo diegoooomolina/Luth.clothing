@@ -1,0 +1,70 @@
+.card-products-container {
+    margin: 5vh auto;
+}
+
+.section-2 {
+    padding: 40px;
+    background-color: #b8b8b8;
+    
+}
+
+.span-1 {
+
+    text-decoration: line-through;
+}
+
+.card-spancing {
+    padding: 60px;
+}
+
+.card-products {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+.content-card{
+    background-color: #8b8b8b;
+    margin: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 ;
+    width: 160px;
+
+}
+
+.ofert-info {
+    margin-top: 10px;
+}
+
+.card-products h2 {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.card-products img {
+    padding: 5px;
+    width: 150px;
+    height: 150px;
+}
+
+
+
+.card-products button {
+    padding: 5px;
+    color: white;
+    background-color: #8b8b8b;
+    text-align: center;
+    cursor: pointer;
+    width: 50%;
+    font-size: 15px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.card-products button:hover {
+    opacity: 0.7;
+}
+

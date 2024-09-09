@@ -1,35 +1,44 @@
 import '../styles/navBar.css'
+import { Link } from 'react-router-dom'
+import { useState } from 'react'
 
-export function NavBar () {
+
+
+export function NavBar() {
+
+    const [show, setShow] = useState(true)
+
+    function handleShow () {
+        setShow(!show)
+    }
+    
     return (
         <>
-        <header>
-            <div className="container section-logo">
-                <img src="img/foto.png" alt="Logo" className="img-logo" />
-        
-                <nav>
-                <a href="#">Inicio</a>
-                <a href="#">Mujer</a>
-                <a href="#">Hombre</a>
-                <a href="#">Nosotros</a>
-                <a href="#">Contacto</a>
-                </nav>
                 
-                <div className="container-actions">
-                <button>
-                    <i className="fa-solid fa-magnifying-glass"></i>
-                </button>
-                <button>
-                    <i className="fa-regular fa-bell"></i>
-                </button>
-                <button>
-                    <i className="fa-regular fa-user"></i>
-                </button>
+            <header className="header">
+                <div className="container section-logo">
+                    <h1 className="logo">Luth clothing</h1>            
+                    <nav >
+                        <Link to="/">Inicio</Link>
+                        <Link to="/productos" onClick={handleShow}>productos</Link>
+                        <Link to="#">Nosotros</Link>
+                        <Link to="/contacto">Contacto</Link>
+                    </nav>
+                    <div><Link to="#" className="cart-btn"><img src="car.svg" alt="" /> </Link></div>
                 </div>
-            </div>
-            <div id="modal-container"></div>
-            <div id="modal-overlay"></div>
-    </header>
+            </header>
+
+            <section className="separador"></section>
+            {
+                            show === false && <div className="content-overley">
+                                <Link to="/">masculino</Link>
+                                <Link to="/">femenino</Link>
+                                <Link to="/productos/remeras">remeras</Link>
+                                <Link to="/productos/pantalones">pantalones</Link>
+                                <Link to="/productos/yort">yores</Link>
+                                <Link to="/productos/camperas">camperas</Link>
+                                <Link to="/productos/buzos">buzos</Link>
+                            </div>
+                        }
         </>
-    )
-}
+    )}

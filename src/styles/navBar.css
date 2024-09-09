@@ -1,40 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap');
-
-:root {
-    --green-light: #a6f477 ;
-    --green-medium:#59b520  ;
-    --green-dark:  #306c0b  ;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Anton', sans-serif;
-
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-
-header {
+.header {
     background-color: #fff;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    height: 100px;
+    position: fixed;
+    width: 100%;
 }
 
 .section-logo {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 0;
+    width: 70%;
 
     nav {
         display: flex;
         gap: 30px;
-
+    
         a {
         color: #333;
         font-weight: 500;
@@ -42,7 +24,7 @@ header {
         text-decoration: none;
         border-bottom: 2px solid transparent;
         }
-
+    
         a:hover {
         border-bottom: 2px solid #59b520;
         color: #59b520;
@@ -50,39 +32,41 @@ header {
     }
 }
 
-.img-logo {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
+.logo {
+    text-transform: uppercase;
+}
+nav input {
+    display: none;
 }
 
-.container-actions {
-    display: flex;
-    gap: 20px;
+nav :checked ~ .display {
+    display: block;
+}
 
-    button {
-        border: none;
-        background-color: transparent;
-        border: 1px solid #306c0b ;
-        border-radius: 100%;
-        width: 30px;
-        height: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
+.content-display {
+    border: 1px solid black;
+}
 
-        &:hover {
-        background-color: #306c0b ;
+.display {
+    position: absolute;
+    background-color:rgb(255, 255, 255);
+    display: grid;
+    left: 790px;
+    top: 60px;
+    text-align: center;
+    border: 1px solid black;
+    border-top: none;
 
-        i {
-            color: #fff;
-        }
-        }
+    a {
+        text-decoration: none;
+        color: #000000;
     }
 
-    i {
-        color: #306c0b ;
-        font-size: 14px;
-    }
+}
+
+
+
+.separador {
+    width: 100%;
+    height: 100px;
 }

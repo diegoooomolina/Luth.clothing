@@ -1,0 +1,37 @@
+[
+    {
+        "id" : 1,
+        "title" : "1",
+        "img" : "./yort-1-f.jpg",
+        "price" : 1000,
+        "description" : "lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+        "categoria" : "yort"
+    },
+    {
+        "id" : 2,
+        "title" : "2",
+        "img" : "../assets/media/yort-2-f.jpg",
+        "price" : 2000,
+        "description" : "lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+        "categoria" : "yort"
+
+    }, 
+    {
+        "id" : 3,
+        "title" : "3",
+        "img" : "../assets/media/yort-3-f.jpg",
+        "price" : 3000,
+        "description" : "lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+        "categoria" : "yort"
+
+    },
+    {
+        "id": 4,
+        "title":"4",
+        "img": ".../assets/react.svg",
+        "price" : 3000,
+        "description" : "lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+        "categoria" : "yort"
+
+    }
+]

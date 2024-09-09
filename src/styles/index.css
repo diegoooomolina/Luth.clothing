@@ -1,0 +1,22 @@
+.fondo {
+    background-image: url(./media/fondo.jpg);
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Sahitya&family=Anton&family=Bebas+Neue:wght@400;700&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'anton', sans-serif;
+    text-decoration: none;
+    display: grid;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
